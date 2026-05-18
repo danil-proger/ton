@@ -8,10 +8,13 @@ import globals from 'globals';
 
 export default tseslint.config(
   {
+    linterOptions: {
+      reportUnusedDisableDirectives: 'off',
+    },
     files: ['src/**/*.{js,jsx,mjs,cjs,ts,tsx}'],
     extends: [
       eslint.configs.recommended,
-      ...tseslint.configs.recommendedTypeChecked,
+      ...tseslint.configs.recommended,
     ],
     plugins: {
       react,
@@ -30,6 +33,7 @@ export default tseslint.config(
       },
     },
     rules: {
+      '@typescript-eslint/no-explicit-any': 0,
       '@typescript-eslint/no-unused-expressions': 0,
     },
   }

@@ -11,8 +11,16 @@ export const IndexPage: FC = () => {
     <Page back={false}>
       <List>
         <Section
-          header="Features"
-          footer="You can use these pages to learn more about features, provided by Telegram Mini Apps and other useful projects"
+          header="TON Homework TMA"
+          footer="Mini App for the TON course homework. It is built with React, Vite, Telegram UI, tma.js and TON Connect."
+        >
+          <Cell subtitle="Open this app from Telegram after GitHub Pages deploy">
+            My first Telegram Mini App
+          </Cell>
+        </Section>
+        <Section
+          header="TON Feature"
+          footer="The TON Connect page is kept from the official template so the app can be extended with wallet flows later."
         >
           <Link to="/ton-connect">
             <Cell
@@ -24,8 +32,8 @@ export const IndexPage: FC = () => {
           </Link>
         </Section>
         <Section
-          header="Application Launch Data"
-          footer="These pages help developer to learn more about current launch information"
+          header="Telegram Launch Data"
+          footer="These pages show the technical data Telegram passes into a Mini App."
         >
           <Link to="/init-data">
             <Cell subtitle="User data, chat information, technical data">Init Data</Cell>
